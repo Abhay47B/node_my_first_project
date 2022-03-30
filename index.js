@@ -7,9 +7,9 @@ app.use(bodyParser.urlencoded({ extended: false }))
 // parse application/json
 app.use(bodyParser.json())
 
-app.get("/home",(req,res)=>{
+/*app.get("/home",(req,res)=>{
     res.send("Server started pulled by Get Method")
-})
+})*/
 app.post("/post-Method",(req,res)=>{
     console.log(req.body.name)
     res.send("Server started pulled by post method.")
